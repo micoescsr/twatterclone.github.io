@@ -7,6 +7,7 @@
     <title>Oasis</title>
   </head>
   <body>
+    <div class="background"></div>
     <!--MAIN PAGE CONTENT-->
     <div class="profile-main-page">
       <!--PROFILE PAGE NAVIGATION PANE-->
@@ -20,11 +21,7 @@
             <!--HOME BUTTON-->
             <div class="home-nav-btn">
               <button class="nav-btn">
-                <img
-                  src="./icons/Equal Housing Opportunity.png"
-                  alt="Home Icon"
-                  class="nav-icon"
-                />
+                <img src="./icons/home.png" alt="Home Icon" class="nav-icon" />
                 <h3 id="nav-title">Home</h3>
               </button>
             </div>
@@ -32,7 +29,11 @@
             <!--PROFILE BUTTON-->
             <div class="home-nav-btn">
               <button class="nav-btn">
-                <img src="./icons/User.png" alt="Home Icon" class="nav-icon" />
+                <img
+                  src="./icons/profile.png"
+                  alt="Home Icon"
+                  class="nav-icon"
+                />
                 <h3 id="nav-title">Profile</h3>
               </button>
             </div>
@@ -41,7 +42,7 @@
             <div class="home-nav-btn">
               <button class="nav-btn">
                 <img
-                  src="./icons/Batch Assign.png"
+                  src="./icons/following.png"
                   alt="Home Icon"
                   class="nav-icon"
                 />
@@ -60,7 +61,7 @@
                 />
                 <div>
                   <h4 id="prof-btn-title">User Profile Name</h4>
-                  <p id="prof-btn-title">@Username</p>
+                  <p id="prof-btn-title">@Username12345</p>
                 </div>
               </button>
             </div>
@@ -68,40 +69,157 @@
         </div>
       </div>
       <!--MAIN PROFILE CONTENT (USER INFORMATION AND PROFILE)-->
-      <div class="twatter-profile-section"> <!-- USER PROFILE ICON, BANNER, ETC, IS FINISHED -->
-        <div class="twatter-profile-user"> 
-            <img src="/icon-images/twatter-user-banner.jpg" class="profile-banner-img">
-            <div class="profile-user-tab">
-                <div class="user-tab-1">
-                    <div class="user-tab-1-img">
-                        <img src="./icon-images/dk_biceps.jpg">
-                    </div>
-                    <div class="user-tab-1-cta">
-                        <div class="cta-1">
-                            <img src="./icon-images/pen.png" class="cta-icon">
-                        </div>
-                    </div>
-                </div>
-                <div class="user-tab-2">
-                    <h2> dokyeom </h2>
-                    <div class="tab-2-handle">
-                        <p>@itsdeekayy</p>
-                    </div>
-                </div>
-                <div class="user-tab-3">
-                    <p> 1997 | Artist | PLEDIS Entertainment. </p>
-                </div>
-                <div class="user-tab-4">
-                    <a class="tab-4-item" href="#">
-                        <span class="following-text">FOLLOWING</span>
-                    </a>
-                </div>
+      <div class="twatter-profile-section">
+        <!-- USER PROFILE ICON, BANNER, ETC, IS FINISHED -->
+        <div class="twatter-profile-user">
+          <img
+            src="/icon-images/twatter-user-banner.jpg"
+            class="profile-banner-img"
+          />
+          <div class="profile-user-tab">
+            <div class="user-tab-1">
+              <div class="user-tab-1-img">
+                <img
+                  src="./icon-images/dk_biceps.jpg"
+                  alt="User Profile Picture"
+                />
+              </div>
+              <div class="user-tab-1-cta">
+                <button>
+                  <img src="./icon-images/pen.png" class="cta-icon" />
+                </button>
+              </div>
             </div>
+            <div class="user-tab-2">
+              <h2 class="profile-text">dokyeom</h2>
+              <div class="tab-2-handle">
+                <p class="profile-text">@itsdeekayy</p>
+              </div>
+            </div>
+            <div class="user-tab-3">
+              <p class="profile-text profile-bio-text">
+                1997 | Artist | PLEDIS Entertainment.
+              </p>
+            </div>
+            <div class="user-tab-4">
+              <a class="tab-4-item" href="#">
+                <span class="profile-text">FOLLOWING</span>
+              </a>
+            </div>
+          </div>
         </div>
-        <div class="twatter-profile-feed"> <!-- PROFILE FEED IS STILL UNDER CONSTRUCTION-->
-
+        <div class="twatter-profile-feed">
+          <!-- PROFILE FEED IS STILL UNDER CONSTRUCTION-->
+          <div class="twatter-profile-tweet">
+            <!-- FIRST TWEET -->
+            <div class="tweet-avatar">
+              <img
+                src="./icon-images/dk_biceps.jpg"
+                class="user-avatar-img"
+                alt="User Avatar"
+              />
+            </div>
+            <div class="tweet-content">
+              <div class="tweet-content-details">
+                <h4 class="tweet-name">dokyeom</h4>
+                <span class="tweet-username"> @itsdeekayy · Nov 27, 2023 </span>
+                <div class="twatter-heart-container">
+                  <img
+                    src="./icon-images/heart.png"
+                    class="heart-icon"
+                    alt="Likes"
+                  />
+                </div>
+              </div>
+              <div class="tweet-content-container">
+                <p class="tweet-text">backburner.</p>
+              </div>
+            </div>
+          </div>
+          <div class="twatter-profile-tweet">
+            <!-- SECOND TWEET -->
+            <div class="tweet-avatar">
+              <img
+                src="./icon-images/dk_biceps.jpg"
+                class="user-avatar-img"
+                alt="User Avatar"
+              />
+            </div>
+            <div class="tweet-content">
+              <div class="tweet-content-details">
+                <h4 class="tweet-name">dokyeom</h4>
+                <span class="tweet-username"> @itsdeekayy · Nov 27, 2023 </span>
+                <div class="twatter-heart-container">
+                  <img
+                    src="./icon-images/heart.png"
+                    class="heart-icon"
+                    alt="Likes"
+                  />
+                </div>
+              </div>
+              <div class="tweet-content-container">
+                <p class="tweet-text">backburner.</p>
+              </div>
+            </div>
+          </div>
+          <div class="twatter-profile-tweet">
+            <!-- THIRD TWEET -->
+            <div class="tweet-avatar">
+              <img
+                src="./icon-images/dk_biceps.jpg"
+                class="user-avatar-img"
+                alt="User Avatar"
+              />
+            </div>
+            <div class="tweet-content">
+              <div class="tweet-content-details">
+                <h4 class="tweet-name">dokyeom</h4>
+                <!-- <span class="tweet-username"> @itsdeekayy · Nov 27, 2023 </span> -->
+                <!-- <span
+                  ><p class="tweet-name">@itsdeekayy · Nov 27, 2023</p>
+                </span> -->
+                <p class="tweet-name">@itsdeekayy · Nov 27, 2023</p>
+                <div class="twatter-heart-container">
+                  <img
+                    src="./icon-images/heart.png"
+                    class="heart-icon"
+                    alt="Likes"
+                  />
+                </div>
+              </div>
+              <div class="tweet-content-container">
+                <p class="tweet-text">backburner.</p>
+              </div>
+            </div>
+          </div>
+          <div class="twatter-profile-tweet">
+            <!-- THIRD TWEET -->
+            <div class="tweet-avatar">
+              <img
+                src="./icon-images/dk_biceps.jpg"
+                class="user-avatar-img"
+                alt="User Avatar"
+              />
+            </div>
+            <div class="tweet-content">
+              <div class="tweet-content-details">
+                <h4 class="tweet-name">dokyeom</h4>
+                <span class="tweet-username"> @itsdeekayy · Nov 27, 2023 </span>
+                <div class="twatter-heart-container">
+                  <img
+                    src="./icon-images/heart.png"
+                    class="heart-icon"
+                    alt="Likes"
+                  />
+                </div>
+              </div>
+              <div class="tweet-content-container">
+                <p class="tweet-text">backburner.</p>
+              </div>
+            </div>
+          </div>
         </div>
-    </div>
+      </div>
     </div>
   </body>
 </html>

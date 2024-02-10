@@ -12,6 +12,15 @@ html {
   scroll-behavior: smooth;
 }
 
+p,
+h1,
+h2,
+h3,
+h4 {
+  padding: 0px;
+  margin: 0px;
+}
+
 body {
   background-image: url(./icon-images/sonata.gif);
   background-repeat: no-repeat;
@@ -41,7 +50,7 @@ body {
   margin-left: 20%;
   margin-right: 20%;
   display: grid;
-  padding-left: 120px;
+  padding-left: 135px;
 }
 
 .prof-nav {
@@ -58,7 +67,7 @@ body {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   position: fixed;
   bottom: 0px;
-  top: 0px;
+  top: 0;
   left: 10%;
   padding-bottom: 10px;
 }
@@ -67,7 +76,7 @@ body {
   text-decoration: none;
   color: inherit;
   font-size: 25px;
-  color: white;
+  color: black;
   font-family: poppins;
 }
 
@@ -111,7 +120,7 @@ body {
 }
 
 #prof-nav-title {
-  color: white;
+  color: black;
   font-size: 3rem;
   font-family: poppins;
 }
@@ -134,7 +143,7 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  gap: 1.5rem;
+  gap: 15px;
 }
 
 .nav-icon.profile-btn-nav {
@@ -142,7 +151,7 @@ body {
 }
 
 #prof-btn-title {
-  color: white;
+  color: black;
 }
 
 .prof-nav-sect {
@@ -167,11 +176,11 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: left;
-  height: 64vh;
-  width: 115vh;
+  height: 55vh;
+  width: 100vh;
   border-radius: 20px;
 
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.2);
   padding: 20px;
   backdrop-filter: blur(10px);
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -179,24 +188,27 @@ body {
 }
 
 .profile-banner-img {
-  height: 180px;
-  width: 710px;
+  height: 150px;
+  width: 730px;
+  border-radius: 1rem;
 }
 
-.user-tab-1-img img{
+.user-tab-1-img img {
   width: 130px;
   border-radius: 100px;
   border-style: solid;
   border-width: 5px;
-  border-color: rgb(48, 46, 70);
+  /* border-color: rgb(48, 46, 70); */
+  border-color: rgba(255, 255, 255, 0.8);
   margin-top: -70px;
+  align-items: flex-start;
 }
 
 .user-tab-1 {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 0px 20px
+  padding: 0px 20px;
 }
 
 .user-tab-1-cta {
@@ -207,10 +219,10 @@ body {
 
 .cta-icon {
   padding: 5px;
-  border-radius: 230px;
+  border-radius: 50%;
   border-style: solid;
   border-color: #454875;
-  border-width: 2px;
+  border-width: 1.5px;
   margin: 0px 10px 0px 0px;
 }
 
@@ -224,19 +236,21 @@ body {
 }
 
 .user-tab-2 h2 {
-  color:aliceblue;
+  color: aliceblue;
   font-size: 25px;
   font-weight: 700;
 }
 
 .tab-2-handle p {
-  color:darkgray;
+  color: darkgray;
   font-size: 15px;
   font-weight: 600;
 }
 
 .user-tab-3 {
   padding: 20px 20px 0px 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .user-tab-3 p {
@@ -250,7 +264,7 @@ body {
 }
 
 .tab-4-item span {
-  color:darkgray;
+  color: darkgray;
   font-size: 15px;
   font-weight: 500;
 }
@@ -263,17 +277,81 @@ body {
   color: aliceblue;
 }
 
+/* TWATTER PROFILE FEED */
+
 .twatter-profile-feed {
   display: flex;
   flex-direction: column;
   justify-content: left;
   height: 64vh;
-  width: 115vh;
+  width: 100vh;
   border-radius: 20px;
+  /* max-height: fit-content; */
 
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.2);
   padding: 20px;
   backdrop-filter: blur(10px);
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   margin: 10px 20px 0px 10px;
+}
+
+.profile-text {
+  font-family: poppins;
+}
+
+.profile-text.profile-bio-text {
+  font-size: 15px;
+}
+
+.twatter-profile-tweet {
+  display: flex;
+  flex-direction: row;
+  padding: 20px;
+  border-style: solid;
+  border-color: darkgrey;
+  border-width: 1px 0px 0px 0px;
+}
+
+.user-avatar-img {
+  width: 40px;
+  border-radius: 100px;
+}
+
+.twatter-heart-container img {
+  margin-left: 220px;
+}
+
+.heart-icon {
+  height: 20px;
+  width: 20px;
+}
+
+.tweet-content {
+  padding-left: 15px;
+}
+
+.tweet-content p {
+  font-size: 15px;
+  font-weight: 500px;
+  color: aliceblue;
+}
+
+.tweet-content-container {
+  margin-top: 10px;
+}
+
+.tweet-content-details {
+  display: flex;
+  flex-direction: row;
+}
+
+.tweet-content-details h4 {
+  font-size: 23px;
+  font-weight: 600px;
+  color: aliceblue;
+  padding-right: 15px;
+}
+
+.tweet-content {
+  color: white;
 }
