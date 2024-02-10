@@ -144,6 +144,7 @@ body {
   flex-direction: row;
   justify-content: space-around;
   gap: 15px;
+  margin-right: 10px;
 }
 
 .nav-icon.profile-btn-nav {
@@ -307,10 +308,12 @@ body {
 
 .profile-text.user-name-text {
   color: white;
+  font-weight: 300;
 }
 
 .profile-text.profile-bio-text {
   font-size: 15px;
+  color: white;
 }
 
 .twatter-profile-tweet {
