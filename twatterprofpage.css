@@ -1,0 +1,159 @@
+/*FONT*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;1,300&display=swap");
+
+/*DESIGN GUIDE: FRAME 1 - PROFILE PAGE - FIGMA*/
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-image: url(./icon-images/sonata.gif);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  backdrop-filter: blur(20px);
+  height: 100vh;
+  width: 100vw;
+  padding: 0px;
+  margin: 0px;
+}
+
+/*NAVIGATION BAR SECTION*/
+
+#logo-icon {
+  width: 50px;
+  height: 50px;
+  margin-top: 5px;
+}
+
+.twatterlogo {
+  display: flex;
+  gap: 1rem;
+}
+
+.profile-main-page {
+  margin-left: 20%;
+  margin-right: 20%;
+  display: grid;
+  padding-left: 120px;
+}
+
+.prof-nav {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 90vh;
+  width: 30vh;
+  border-radius: 20px;
+  margin-top: 2rem;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 20px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  bottom: 0px;
+  top: 0px;
+  left: 10%;
+  padding-bottom: 10px;
+}
+
+#nav-title {
+  text-decoration: none;
+  color: inherit;
+  font-size: 25px;
+  color: white;
+  font-family: poppins;
+}
+
+.nav-btn {
+  transition: all 300ms ease;
+  border: none;
+  background-color: transparent;
+  display: flex;
+  padding: 1rem;
+}
+
+.nav-btn:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 2rem;
+  color: transparent;
+}
+
+.nav-icon {
+  height: 35px;
+  width: 35px;
+}
+
+.nav-btn .nav-icon {
+  margin-right: 15px; /* Adjust margin as needed */
+}
+
+.nav-sect {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 3rem;
+  margin-top: 1rem;
+}
+
+.main-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 10rem;
+}
+
+#prof-nav-title {
+  color: white;
+  font-size: 3rem;
+  font-family: poppins;
+}
+
+#prof-btn-nav {
+  transition: all 300ms ease;
+  border: none;
+  background-color: transparent;
+  display: flex;
+  padding: 1rem;
+}
+
+#prof-btn-nav:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 2rem;
+  color: transparent;
+}
+
+.profile-nav button {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  gap: 1.5rem;
+}
+
+.nav-icon.profile-btn-nav {
+  border-radius: 45%;
+}
+
+#prof-btn-title {
+  color: white;
+}
+
+.prof-nav-sect {
+  flex-wrap: wrap;
+  align-self: center;
+}
+
+.home-nav-btn.profile-nav {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: fit-content;
+}
+
+/*PROFILE MAIN CONTENT*/
