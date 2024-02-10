@@ -179,12 +179,12 @@ body {
   height: 55vh;
   width: 100vh;
   border-radius: 20px;
-
   background: rgba(255, 255, 255, 0.2);
   padding: 20px;
   backdrop-filter: blur(10px);
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   margin: 2rem 20px 0px 10px;
+  align-items: center;
 }
 
 .profile-banner-img {
@@ -202,6 +202,7 @@ body {
   border-color: rgba(255, 255, 255, 0.8);
   margin-top: -70px;
   align-items: flex-start;
+  align-items: center;
 }
 
 .user-tab-1 {
@@ -232,7 +233,11 @@ body {
 }
 
 .user-tab-2 {
-  padding: 10px 20px 0px 20px;
+  /* padding: 10px 20px 0px 20px; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .user-tab-2 h2 {
@@ -297,6 +302,11 @@ body {
 
 .profile-text {
   font-family: poppins;
+  color: white;
+}
+
+.profile-text.user-name-text {
+  color: white;
 }
 
 .profile-text.profile-bio-text {
@@ -354,4 +364,28 @@ body {
 
 .tweet-content {
   color: white;
+}
+
+.tweet-name {
+  font-family: poppins;
+}
+
+.tweet-name.tweet-profile-name {
+  font-size: 15px;
+}
+
+.tweet-name.tweet-profile-user-name {
+  font-size: 10px;
+  margin-top: 4px;
+}
+
+.tweet-text {
+  font-family: poppins;
+}
+
+.profile-user-tab {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
 }
