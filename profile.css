@@ -135,7 +135,7 @@ a {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
-  margin-bottom: 5rem;
+  margin-bottom: 10rem;
   justify-content: space-evenly;
 }
 
