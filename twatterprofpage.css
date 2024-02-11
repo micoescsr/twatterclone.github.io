@@ -3,6 +3,7 @@
 
 /*DESIGN GUIDE: FRAME 1 - PROFILE PAGE - FIGMA*/
 
+/*GENERAL*/
 * {
   margin: 0;
   padding: 0;
@@ -34,6 +35,8 @@ body {
   background-size: cover;
   backdrop-filter: blur(15px);
 }
+
+/********************************/
 
 /*NAVIGATION BAR SECTION*/
 
@@ -112,7 +115,11 @@ body {
 }
 
 .nav-btn .nav-icon {
-  margin-right: 15px; /* Adjust margin as needed */
+  margin-right: 15px;
+}
+
+a {
+  text-decoration: none;
 }
 
 .nav-sect {
@@ -177,6 +184,17 @@ body {
   margin-right: auto;
   margin-left: auto;
   max-width: fit-content;
+}
+
+.shux {
+  margin-top: 2.5px;
+  font-family: poppins;
+}
+
+.nav-icon.material-symbols-outlined {
+  font-size: 34px;
+  font-weight: 800;
+  margin-top: 2px;
 }
 
 /*PROFILE MAIN CONTENT*/
@@ -424,6 +442,7 @@ body {
   display: flex;
   flex-direction: column;
 }
+/*HEART BUTTON TRANSITION*/
 
 .heart-button:hover .material-symbols-outlined {
   color: red;
@@ -451,24 +470,27 @@ body {
   font-size: 1rem;
 }
 
+/**************************/
+
+/*PUBLICATION DETAILS TWEET STYLING (USERNAME AND PUBLICATION DATE)*/
+
 .publication-details {
   display: flex;
   gap: 10px;
 }
 
-.publication-user-name,
-.publication-pub-date {
-  font-family: poppins;
-}
-
 .publication-user-name {
+  font-family: poppins;
   margin-top: 2px;
   font-weight: 100;
 }
 
 .publication-pub-date {
   margin-top: 2.5px;
+  font-family: poppins;
 }
+
+/*********************************************/
 
 /*REVISED NAV BAR CSS*/
 
@@ -542,10 +564,4 @@ h2 {
 /**/
 .tab-2-handle.tab-2-profile-name {
   align-items: flex-end;
-}
-
-.nav-icon.material-symbols-outlined {
-  font-size: 34px;
-  font-weight: bold;
-  margin-top: 2px;
 }
