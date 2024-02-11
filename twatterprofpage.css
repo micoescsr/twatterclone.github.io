@@ -22,15 +22,17 @@ h4 {
 }
 
 body {
-  background-image: url(./icon-images/sonata.gif);
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  backdrop-filter: blur(20px);
+  display: flex;
   height: 100vh;
-  width: 100vw;
-  padding: 0px;
-  margin: 0px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 40px;
+
+  background-image: url(./assets/sonata2.gif);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  backdrop-filter: blur(15px);
 }
 
 /*NAVIGATION BAR SECTION*/
@@ -49,8 +51,17 @@ body {
 .profile-main-page {
   margin-left: 20%;
   margin-right: 20%;
-  display: grid;
+  display: flex;
   padding-left: 135px;
+  margin-top: 1rem;
+  flex: 0.5;
+  min-width: fit-content;
+  overflow-y: scroll;
+}
+
+.profile-main-page::-webkit-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 
 .prof-nav {
@@ -66,7 +77,7 @@ body {
   backdrop-filter: blur(10px);
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   position: fixed;
-  bottom: 0px;
+  bottom: 0;
   top: 0;
   left: 10%;
   padding-bottom: 10px;
@@ -86,6 +97,7 @@ body {
   background-color: transparent;
   display: flex;
   padding: 1rem;
+  gap: 10px;
 }
 
 .nav-btn:hover {
@@ -116,7 +128,8 @@ body {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
-  margin-bottom: 10rem;
+  margin-bottom: 5rem;
+  justify-content: space-evenly;
 }
 
 #prof-nav-title {
@@ -237,7 +250,6 @@ body {
   /* padding: 10px 20px 0px 20px; */
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
 }
 
@@ -304,6 +316,7 @@ body {
 .profile-text {
   font-family: poppins;
   color: white;
+  margin-right: 0;
 }
 
 .profile-text.user-name-text {
@@ -325,32 +338,44 @@ body {
   border-width: 1px 0px 0px 0px;
 }
 
+.twatter-profile-tweet-last {
+  display: flex;
+  flex-direction: row;
+  padding: 20px;
+  border-style: solid;
+  border-color: darkgrey;
+  border-width: 1px 0px 1px 0px;
+}
+
 .user-avatar-img {
   width: 40px;
   border-radius: 100px;
 }
 
-.twatter-heart-container img {
-  margin-left: 220px;
+.twatter-heart-container {
+  margin-left: 290px;
+  display: flex;
 }
 
-.heart-icon {
+.heart-button-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: all 300ms ease;
+  background-color: transparent;
+  border: none;
   height: 20px;
-  width: 20px;
+  width: 40px;
+  align-items: center;
 }
 
 .tweet-content {
   padding-left: 15px;
 }
 
-.tweet-content p {
-  font-size: 15px;
-  font-weight: 500px;
-  color: aliceblue;
-}
-
 .tweet-content-container {
   margin-top: 10px;
+  display: flex;
 }
 
 .tweet-content-details {
@@ -363,6 +388,12 @@ body {
   font-weight: 600px;
   color: aliceblue;
   padding-right: 15px;
+}
+
+.tweet-content-details span p {
+  font-size: 12px;
+  font-weight: 500px;
+  color: aliceblue;
 }
 
 .tweet-content {
@@ -384,6 +415,7 @@ body {
 
 .tweet-text {
   font-family: poppins;
+  font-size: 12px;
 }
 
 .profile-user-tab {
@@ -391,4 +423,129 @@ body {
   justify-content: center;
   display: flex;
   flex-direction: column;
+}
+
+.heart-button:hover .material-symbols-outlined {
+  color: red;
+}
+
+.heart-button.liked .material-symbols-outlined {
+  color: red;
+}
+
+.heart-button.liked .button-text {
+  color: red;
+}
+
+.heart-button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  color: black;
+  gap: 10px;
+}
+
+.like-count-text {
+  font-size: 1rem;
+}
+
+.publication-details {
+  display: flex;
+  gap: 10px;
+}
+
+.publication-user-name,
+.publication-pub-date {
+  font-family: poppins;
+}
+
+.publication-user-name {
+  margin-top: 2px;
+  font-weight: 100;
+}
+
+.publication-pub-date {
+  margin-top: 2.5px;
+}
+
+/*REVISED NAV BAR CSS*/
+
+body {
+  display: flex;
+  height: 100vh;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 40px;
+
+  background-image: url(./icon-images/sonata.gif);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  backdrop-filter: blur(15px);
+}
+
+.sidebar {
+  flex: 0.2;
+  min-width: 230px;
+  margin-top: 20px;
+  margin-left: 120px;
+  padding-left: 20px;
+  padding-right: 20px;
+  height: 95vh;
+}
+
+.sidebar {
+  background-color: rgba(240, 240, 240, 0.2);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 6px rgb(1, 1, 1, 0.1);
+  border-radius: 20px;
+}
+
+.sidebarOpt {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.sidebarOpt,
+h2 {
+  font-weight: 800;
+  font-size: 20px;
+  margin-right: 20px;
+  font-family: poppins;
+}
+
+.side-header {
+  display: flex;
+}
+
+#owl {
+  margin-top: 1.5rem;
+  width: 70px;
+  height: 40px;
+}
+
+.logo {
+  font-family: poppins;
+  margin-bottom: 5rem;
+  margin-top: 1.5rem;
+  margin-left: 0.5rem;
+}
+
+.sidebarOpt {
+  border-radius: 30px;
+  color: black;
+}
+
+/**/
+.tab-2-handle.tab-2-profile-name {
+  align-items: flex-end;
+}
+
+.nav-icon.material-symbols-outlined {
+  font-size: 34px;
+  font-weight: bold;
+  margin-top: 2px;
 }
